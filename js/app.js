@@ -1,1 +1,1 @@
-console.log(“Página de HTML5 cargada correctamente ");
+console.log("Página de HTML5 cargada correctamente");
