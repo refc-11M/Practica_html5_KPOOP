@@ -10,7 +10,7 @@ html{
 }
 
 body{
-  background: #1e1e1e;
+  background: #121212;
   color: #222;
 }
 
@@ -18,10 +18,11 @@ body{
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: linear-gradient(135deg, #e34f26, #f16529);
+  background: linear-gradient(135deg, #000000, #1c1c1c);
   color: white;
   padding: 18px 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  border-bottom: 2px solid #d4af37;
 }
 
 .logo{
@@ -42,10 +43,12 @@ body{
 
 .logo h1{
   font-size:2rem;
+  color:#d4af37;
 }
 
 .logo p{
   font-size:0.95rem;
+  color:#ccc;
 }
 
 .nav{
@@ -57,7 +60,7 @@ body{
 .nav a{
   text-decoration:none;
   color:white;
-  background: rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.08);
   padding:10px 14px;
   border-radius:12px;
   font-weight:bold;
@@ -65,7 +68,8 @@ body{
 }
 
 .nav a:hover{
-  background: rgba(255,255,255,0.28);
+  background: #d4af37;
+  color:black;
 }
 
 .hero{
@@ -75,12 +79,12 @@ body{
   align-items:center;
   gap:30px;
   padding:50px 25px;
-  background: linear-gradient(135deg, #fff3ef, #ffffff);
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
 }
 
 .hero-texto h2{
   font-size:3rem;
-  color:#e34f26;
+  color:#d4af37;
   margin-bottom:15px;
 }
 
@@ -93,8 +97,8 @@ body{
 
 .badge{
   display:inline-block;
-  background:#e34f26;
-  color:white;
+  background:#d4af37;
+  color:black;
   padding:8px 14px;
   border-radius:999px;
   margin-bottom:15px;
@@ -104,11 +108,17 @@ body{
 .btn{
   display:inline-block;
   text-decoration:none;
-  background:#2d2d2d;
+  background:#000;
   color:white;
   padding:12px 20px;
   border-radius:12px;
   font-weight:bold;
+  border:1px solid #d4af37;
+}
+
+.btn:hover{
+  background:#d4af37;
+  color:black;
 }
 
 .hero-imagen{
@@ -124,7 +134,7 @@ body{
 
 .seccion{
   padding:50px 25px;
-  background:#f7f7f7;
+  background:#f4f4f4;
   border-top:1px solid #ddd;
 }
 
@@ -134,18 +144,18 @@ body{
   background:white;
   border-radius:22px;
   padding:25px;
-  box-shadow:0 8px 20px rgba(0,0,0,0.08);
-  border-left:8px solid #e34f26;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+  border-left:8px solid #d4af37;
 }
 
 .card h2{
-  color:#e34f26;
+  color:#d4af37;
   margin-bottom:15px;
   font-size:2rem;
 }
 
 .card h3{
-  color:#e34f26;
+  color:#000;
   margin-bottom:10px;
 }
 
@@ -181,8 +191,9 @@ body{
 }
 
 .mini-card{
-  background:#fff7f3;
-  border:1px solid #f1c3b5;
+  background:#fafafa;
+  border:1px solid #ddd;
+  border-left:4px solid #d4af37;
   border-radius:16px;
   padding:18px;
 }
@@ -208,17 +219,23 @@ body{
 
 .demo-form button{
   border:none;
-  background:#e34f26;
+  background:#000;
   color:white;
   padding:12px;
   border-radius:12px;
   font-weight:bold;
   cursor:pointer;
+  border:1px solid #d4af37;
+}
+
+.demo-form button:hover{
+  background:#d4af37;
+  color:black;
 }
 
 .footer{
-  background:#2d2d2d;
-  color:white;
+  background:#000;
+  color:#d4af37;
   text-align:center;
   padding:18px;
   font-weight:bold;
